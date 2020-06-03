@@ -1,0 +1,144 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagendefondo"
+    android:fitsSystemWindows="true"
+    tools:context=".MenuPrincipal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardCrossfit"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="70dp"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/Crossfit"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/crossfit"
+                android:onClick="IrCrossfit" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardCuadriceps"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="70dp"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/Cuadriceps"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/cuadriceps"
+                android:onClick="IrCuadriceps" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardEstiramientos"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="70dp"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/Estiramientos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/estiramiento"
+                android:onClick="IrEstiramientos" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardTonificacion"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="70dp"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/Tonificacion"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/tonificacion"
+                android:onClick="IrTonificacion" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardResistencia"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="70dp"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/Resistencia"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/resistencia"
+                android:onClick="IrResistencia" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardAbdominales"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="70dp"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/Abdominales"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/abdominales"
+                android:onClick="IrAbdominales" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardGluteos"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="70dp"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/Gluteos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/gluteos"
+                android:onClick="IrGluteos" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardDieta"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="70dp"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/Dieta"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/dieta"
+                android:onClick="IrDietas" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

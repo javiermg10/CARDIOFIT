@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagendefondo"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_blanco"
+        android:id="@+id/Logo"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="30dp"
+        android:paddingTop="30dp"
+        android:layout_margin="0dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingTop="0dp"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/aplicaciontitulo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/Logo"
+        android:layout_marginTop="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/trans_white_rectangle"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Texto_Iniciar_Sesion"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/Correo_Electronico"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_account_usuario"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:id="@+id/NombreSesion"
+                android:layout_marginBottom="10dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/Contrasena"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_account_contrasena"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:inputType="textPassword"
+                android:id="@+id/Contraseña"
+                android:layout_marginBottom="10dp"/>
+
+            <CheckBox
+                android:id="@+id/mostrar_contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="0dp"
+                android:textSize="15sp"
+                android:text="@string/Mostrar_Contraseña"/>
+
+            <Button
+                android:id="@+id/BotonIniciarSesion"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/register_button"
+                android:onClick="InicioSesion"
+                android:text="@string/Boton_Iniciar_Sesion"
+                android:textColor="@color/white"
+                android:textStyle="normal"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/PreguntarRegistro"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="@string/PreguntaRegistro" />
+
+                    <Button
+                        android:id="@+id/BotonRegistrarse"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="#00F3F1F1"
+                        android:fontFamily="sans-serif"
+                        android:gravity="fill_vertical"
+                        android:onClick="Registrarse"
+                        android:text="@string/Boton_Ir_Registro"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

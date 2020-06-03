@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ItemMas"
+        android:icon="@drawable/ic_more_opciones"
+        android:title="Mas"
+        app:showAsAction="always">
+
+    <menu>
+        <item
+            android:id="@+id/ItemAjustes"
+            android:icon="@drawable/ic_info_informacion"
+            android:title="@string/OpcionAjustes"/>
+
+        <item android:title="@string/OpcionPerfil"
+            android:id="@+id/ItemPerfil"
+            android:icon="@drawable/ic_account_perfil"/>
+
+        <item android:title="@string/OpcionRegistroEntrenamiento"
+            android:id="@+id/ItemRegistrarEntrenamiento"
+            android:icon="@drawable/ic_control_point_black_24dp"/>
+
+        <item android:title="@string/OpcionHistorial"
+            android:id="@+id/ItemHistorial"
+            android:icon="@drawable/ic_assignment_historial"/>
+
+        <item android:title="@string/OpcionCerrarSesion"
+            android:id="@+id/ItemCerrarSesion"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"/>
+
+    </menu>
+    </item>
+
+</menu>

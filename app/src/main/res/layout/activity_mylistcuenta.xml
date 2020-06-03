@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mylistcuenta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:id="@+id/titulonombre"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textAllCaps="false"
+                    android:text="@string/TituloNombreCuenta"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+                <TextView
+                    android:id="@+id/nombre"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/titulocorreo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:text="@string/TituloCorreoCuenta"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+                <TextView
+                    android:id="@+id/nombre_usuario"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:id="@+id/titulocontrasena"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textAllCaps="false"
+                    android:text="@string/TituloContrasenaCuenta"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+                <TextView
+                    android:id="@+id/contrasena"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp">
+                <TextView
+                    android:id="@+id/tituloedad"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textAllCaps="false"
+                    android:text="@string/TituloEdadCuenta"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+                <TextView
+                    android:id="@+id/edad"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/titulopeso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textAllCaps="false"
+                    android:text="@string/TituloPesoCuenta"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+                <TextView
+                    android:id="@+id/peso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tituloaltura"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:textAllCaps="false"
+                    android:text="@string/TituloAlturaCuenta"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+                <TextView
+                    android:id="@+id/altura"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>
